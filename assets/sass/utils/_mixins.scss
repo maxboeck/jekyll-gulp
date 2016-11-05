@@ -1,0 +1,24 @@
+//--------------------
+// SCSS MIXINS
+//--------------------
+
+// import bootstrap mixins
+@import "../vendor/bootstrap/mixins";
+
+
+// shorthand for media-breakpoint-up
+@mixin mq($name) {
+  @include media-breakpoint-up($name) {
+    @content;
+  }
+}
+
+
+// dynamic z-index function
+@function z($layer) {
+  @if map-has-key($z-layers, $layer) == false {
+    @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+  }
+ 
+  @return map-get($z-layers, $layer);
+}
