@@ -14,7 +14,6 @@ const AUTOPREFIXER_BROWSERS = [
   'Explorer 8'
 ];
 
-// Compile sass + livereload with css injection + minificiation
 gulp.task('sass', () => {
   return gulp.src('assets/sass/main.scss')
     .pipe($.sourcemaps.init())

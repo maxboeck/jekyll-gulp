@@ -8,7 +8,6 @@ import webpack from 'webpack-stream';
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
-// Compile JavaScript files + uglifies files
 gulp.task('scripts', () => {
   return gulp.src('assets/js/main.js')
     .pipe(webpack({

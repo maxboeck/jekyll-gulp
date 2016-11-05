@@ -4,7 +4,7 @@
   "description": "A static website building kit",
   "repository": {
     "type": "git",
-    "url": "http://github.com/maxboeck/"
+    "url": "http://github.com/maxboeck/jekyll-gulp"
   },
   "author": "@mxbck",
   "license": "MIT",

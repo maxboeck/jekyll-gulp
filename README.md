@@ -7,9 +7,9 @@ A customized starter kit for static websites, using [Jekyll](https://jekyllrb.co
 * Livereloading with BrowserSync
 * ES6 ready (with Babel)
 * JS Bundling with Webpack
-* Sass with Autoprefixer
+* Sass with Autoprefixer and Sourcemaps
 * SVG Icons with Grunticon
-* Image Optim, HTML Minifier and other production goodies
+* Image Optim, Minification and other production goodies
 
 ### Usage
 
