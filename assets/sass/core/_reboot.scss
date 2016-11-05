@@ -159,13 +159,9 @@ a {
   color: $link-color;
   text-decoration: $link-decoration;
 
-  @include hover-focus {
+  &:hover, &:focus {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
-  }
-
-  &:focus {
-    @include tab-focus();
   }
 }
 
