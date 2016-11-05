@@ -2,17 +2,6 @@
 // SCSS MIXINS
 //--------------------
 
-// import bootstrap mixins
-@import "../vendor/bootstrap/mixins";
-
-
-// shorthand for media-breakpoint-up
-@mixin mq($name) {
-  @include media-breakpoint-up($name) {
-    @content;
-  }
-}
-
 
 // dynamic z-index function
 @function z($layer) {
