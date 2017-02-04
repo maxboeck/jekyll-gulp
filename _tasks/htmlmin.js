@@ -8,8 +8,8 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 gulp.task('htmlmin', () => {
-  return gulp.src('./_site/**/*.html')
+  return gulp.src('_site/**/*.html')
     .pipe($.htmlmin( {collapseWhitespace: true}))
-    .pipe(gulp.dest('./_site/'))
+    .pipe(gulp.dest('_site/'))
     .pipe(reload({stream: true}));
 });

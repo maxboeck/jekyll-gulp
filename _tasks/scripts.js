@@ -9,7 +9,13 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 gulp.task('scripts', () => {
-  return gulp.src('assets/js/main.js')
+  return gulp.src('_assets/js/main.js')
+    .pipe($.plumber({
+      errorHandler: function (err) {
+        gutil.log(gutil.colors.red(err));
+        this.emit('end');
+      }
+    }))
     .pipe(webpack({
       module: {
         loaders: [{

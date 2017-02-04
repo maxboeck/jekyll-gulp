@@ -15,7 +15,13 @@ const AUTOPREFIXER_BROWSERS = [
 ];
 
 gulp.task('sass', () => {
-  return gulp.src('assets/sass/main.scss')
+  return gulp.src('_assets/sass/main.scss')
+    .pipe($.plumber({
+      errorHandler: function (err) {
+        gutil.log(gutil.colors.red(err));
+        this.emit('end');
+      }
+    }))
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       precision: 10,
